@@ -19,7 +19,7 @@ In phone model specific directory, you can create files:
 | ------------------ |----------------------------------------------------------------------------------------------------------------------------|
 | `uninstall`        | Script will try to uninstall package from phone completely (if it fails, I suggest to try it uninstall package for user 0) |
 | `uninstall.extras` | Same as uninstall, but does not uninstall packages automatically - it just suggests user to run a command to uninstall those packages. |
-| `uninstall.user`   | Script will try to uninstall package for user `0` - which is usually default user (if it fails, there is no othey way than use disable package) |
+| `uninstall.user`   | Script will try to uninstall package for user `0` - which is usually default user (if it fails, there is no other way than use disable package) |
 | `disable`        | Script will try to disable package for user `0` - which is usually default user |
 | `disable.extras` | Same as disable, but does not disable packages automatically - it just suggests user to run a command to disable those packages. |
 | `NOTES`   | Just a message to user which will be shown at the end of phone setup process - good place where to put some model specific warnings (which packages bricks the phone and stuff like that) |
