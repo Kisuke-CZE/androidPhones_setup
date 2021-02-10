@@ -2,7 +2,7 @@
 Simple setup scripts for my phones with Android to get rid of preinstalled bloatware without root access needed
 
 # Requirements
-Whole thing is only simple bash script. But it uses `adb` tool co talk to phone.
+Whole thing is only simple bash script. But it uses `adb` tool to talk to phone.
 
 In Ubuntu/Debian flavored Linux, you can install adb with: `sudo apt install android-tools-adb android-tools-fastboot`
 
