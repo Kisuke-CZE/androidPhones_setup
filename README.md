@@ -1,6 +1,13 @@
 # androidPhones_setup
 Simple setup scripts for my phones with Android to get rid of preinstalled bloatware without root access needed
 
+# Requirements
+Whole thing is only simple bash script. But it uses `adb` tool co talk to phone.
+
+In Ubuntu/Debian flavored Linux, you can install adb with: `sudo apt install android-tools-adb android-tools-fastboot`
+
+You also need to enable USB Debugging in your phone.
+
 # Usage
 Just clone this repository and in `prep_scripts` directory you can find scripts which just launches setup for predefined phones.
 
