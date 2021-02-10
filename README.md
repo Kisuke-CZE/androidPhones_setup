@@ -4,7 +4,7 @@ Simple setup scripts for my phones with Android to get rid of preinstalled bloat
 # Usage
 Just clone this repository and in `prep_scripts` directory you can find scripts which just launches setup for predefined phones.
 
-If you want to create script/preset fro your phone, just copy one of launchers in `prep_scripts` and adjust variables `VENDOR` and `MODEL`. Also create corresponding structure in `devices` directory. Structure should be `VENDOR/MODEL`.
+If you want to create script/preset for your phone, just copy one of launchers in `prep_scripts` and adjust variables `VENDOR` and `MODEL`. Also create corresponding structure in `devices` directory. Structure should be `VENDOR/MODEL`.
 
 In phone model specific directory, you can create files:
 
