@@ -1,0 +1,21 @@
+Show all packages:
+adb shell pm list packages
+
+Show disabled packages:
+adb shell pm list packages -d
+
+Disable package:
+adb shell pm disable-user --user 0 <package_to_disable>
+
+Enable package:
+adb shell pm enable <package_to_enable>
+
+Uninstall package for user:
+adb shell pm uninstall -k --user 0 com.google.android.gm
+
+Reinstall package which was uninstalled for user:
+adb shell cmd package install-existing com.miui.bugreport
+
+Uninstall package completely:
+adb uninstall com.miui.bugreport
+

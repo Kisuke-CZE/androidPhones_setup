@@ -1,0 +1,4 @@
+com.xiaomi.micloud.sdk is needed for Xiaomi Gallery app - It will keep crashing without this library
+
+!!! Never uninstall package com.xiaomi.finddevice !! - Phone won't boot without it!
+
