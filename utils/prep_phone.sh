@@ -40,13 +40,7 @@ then
   source "${SCRIPT_LOCATION}/../utils/uninstall.sh" "${SCRIPT_LOCATION}/../devices/${VENDOR}/${MODEL}/uninstall"
 fi
 
-if [ -f "${SCRIPT_LOCATION}/../devices/${VENDOR}/${MODEL}/uninstall.user" ]
-then
-  source "${SCRIPT_LOCATION}/../utils/uninstall-user.sh" "${SCRIPT_LOCATION}/../devices/${VENDOR}/${MODEL}/uninstall.user"
-fi
-
-# We already checked for that. Just do it
-if [ -f "${SCRIPT_LOCATION}/../devices/${VENDOR}/${MODEL}/uninstall" ]
+if [ -f "${SCRIPT_LOCATION}/../devices/${VENDOR}/${MODEL}/disable" ]
 then
   source "${SCRIPT_LOCATION}/../utils/disable.sh" "${SCRIPT_LOCATION}/../devices/${VENDOR}/${MODEL}/disable"
 fi
