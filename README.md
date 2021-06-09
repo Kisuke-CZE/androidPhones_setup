@@ -24,4 +24,4 @@ In phone model specific directory, you can create files:
 | `NOTES`   | Just a message to user which will be shown at the end of phone setup process - good place where to put some model specific warnings (which packages bricks the phone and stuff like that) |
 
 # Identifying package names
-If you wonder how to identify those package names for unwanted apps in your phone - try [App Inspector](https://play.google.com/store/apps/details?id=bg.projectoria.appinspector)
+If you wonder how to identify those package names for unwanted apps in your phone - try [App Inspector](https://play.google.com/store/apps/details?id=bg.projectoria.appinspector) or [AppChecker](https://play.google.com/store/apps/details?id=com.kroegerama.appchecker)
