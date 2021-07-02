@@ -6,7 +6,11 @@ then
   echo "${VENDOR}"
   exit 1
 fi
-MODEL="$(adb shell getprop ro.product.model 2>&1 | tr ' ' '_')"
+MODEL="$(adb shell getprop ro.product.marketname 2>&1 | tr ' ' '_')"
+if [ -z "${MODEL}"]
+then
+  MODEL="$(adb shell getprop ro.product.model 2>&1 | tr ' ' '_')"
+fi
 VENDOR="${VENDOR,,}"
 MODEL="${MODEL,,}"
 if [ "${1}" == "test" ]

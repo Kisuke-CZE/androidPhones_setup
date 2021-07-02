@@ -13,5 +13,5 @@ done < "${1}"
 
 
 echo
-echo "These packages cannot be uninstalled (try to disable them - file disable):"
+echo "These packages cannot be uninstalled (try to disable them - file disable or disable.extras):"
 echo -e "${cannot_uninstall}"
