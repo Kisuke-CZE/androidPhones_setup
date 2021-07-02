@@ -13,5 +13,5 @@ done < "${1}"
 
 
 echo
-echo "These packages cannot be uninstalled (try to uninstall them for user 0 - file uninstall.user):"
+echo "These packages cannot be uninstalled (try to disable them - file disable):"
 echo -e "${cannot_uninstall}"

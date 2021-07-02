@@ -9,9 +9,11 @@ In Ubuntu/Debian flavored Linux, you can install adb with: `sudo apt install and
 You also need to enable USB Debugging in your phone.
 
 # Usage
-Just clone this repository and in `prep_scripts` directory you can find scripts which just launches setup for predefined phones.
+Just clone this repository and run `prepare_phone.sh` in it's root directory which will try to autodetect your phone model and launch setup for it if it's defined.
 
-If you want to create script/preset for your phone, just copy one of launchers in `prep_scripts` and adjust variables `VENDOR` and `MODEL`. Also create corresponding structure in `devices` directory. Structure should be `VENDOR/MODEL`.
+If you want to create script/preset for your phone, jus create corresponding structure in `devices` directory. Structure should be `VENDOR/MODEL`.
+
+You can find correct values of `VENDOR` and `MODEL` which your phone reports by running `prepare_phone.sh test`
 
 In phone model specific directory, you can create files:
 

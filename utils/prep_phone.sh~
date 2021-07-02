@@ -12,7 +12,7 @@ then
 fi
 
 
-if [ ! -f "${SCRIPT_LOCATION}/devices/${VENDOR}/${MODEL}/disable" ] && [ ! -f "${SCRIPT_LOCATION}/devices/${VENDOR}/${MODEL}/uninstall" ]
+if [ ! -f "${SCRIPT_LOCATION}/../devices/${VENDOR}/${MODEL}/disable" ] && [ ! -f "${SCRIPT_LOCATION}/../devices/${VENDOR}/${MODEL}/uninstall" ]
 then
   echo "Cannot find setup for ${VENDOR} - ${MODEL}."
   exit 1
@@ -35,42 +35,42 @@ fi
 # echo "${ADB_DEVICES}"
 
 # Start doing something
-if [ -f "${SCRIPT_LOCATION}/devices/${VENDOR}/${MODEL}/uninstall" ]
+if [ -f "${SCRIPT_LOCATION}/../devices/${VENDOR}/${MODEL}/uninstall" ]
 then
-  source "${SCRIPT_LOCATION}/utils/uninstall.sh" "${SCRIPT_LOCATION}/devices/${VENDOR}/${MODEL}/uninstall"
+  source "${SCRIPT_LOCATION}/../utils/uninstall.sh" "${SCRIPT_LOCATION}/../devices/${VENDOR}/${MODEL}/uninstall"
 fi
 
-if [ -f "${SCRIPT_LOCATION}/devices/${VENDOR}/${MODEL}/disable" ]
+if [ -f "${SCRIPT_LOCATION}/../devices/${VENDOR}/${MODEL}/disable" ]
 then
-  source "${SCRIPT_LOCATION}/utils/disable.sh" "${SCRIPT_LOCATION}/devices/${VENDOR}/${MODEL}/disable"
+  source "${SCRIPT_LOCATION}/../utils/disable.sh" "${SCRIPT_LOCATION}/../devices/${VENDOR}/${MODEL}/disable"
 fi
 
-if [ -f "${SCRIPT_LOCATION}/devices/${VENDOR}/${MODEL}/uninstall.extras" ]
+if [ -f "${SCRIPT_LOCATION}/../devices/${VENDOR}/${MODEL}/uninstall.extras" ]
 then
   echo
   echo
   echo "You can uninstall some more extra packages:"
-  cat "${SCRIPT_LOCATION}/devices/${VENDOR}/${MODEL}/uninstall.extras"
+  cat "${SCRIPT_LOCATION}/../devices/${VENDOR}/${MODEL}/uninstall.extras"
   echo
   echo "If you want to do that, run this command:"
-  echo "  $(readlink -f "${SCRIPT_LOCATION}/utils/uninstall.sh") $(readlink -f "${SCRIPT_LOCATION}/devices/${VENDOR}/${MODEL}/uninstall.extras") "
+  echo "  $(readlink -f "${SCRIPT_LOCATION}/../utils/uninstall.sh") $(readlink -f "${SCRIPT_LOCATION}/../devices/${VENDOR}/${MODEL}/uninstall.extras") "
 fi
 
-if [ -f "${SCRIPT_LOCATION}/devices/${VENDOR}/${MODEL}/disable.extras" ]
+if [ -f "${SCRIPT_LOCATION}/../devices/${VENDOR}/${MODEL}/disable.extras" ]
 then
   echo
   echo
   echo "You can disable some more extra packages:"
-  cat "${SCRIPT_LOCATION}/devices/${VENDOR}/${MODEL}/disable.extras"
+  cat "${SCRIPT_LOCATION}/../devices/${VENDOR}/${MODEL}/disable.extras"
   echo
   echo "If you want to do that, run this command:"
-  echo "  $(readlink -f "${SCRIPT_LOCATION}/utils/disable.sh") $(readlink -f "${SCRIPT_LOCATION}/devices/${VENDOR}/${MODEL}/disable.extras") "
+  echo "  $(readlink -f "${SCRIPT_LOCATION}/../utils/disable.sh") $(readlink -f "${SCRIPT_LOCATION}/../devices/${VENDOR}/${MODEL}/disable.extras") "
 fi
 
-if [ -f "${SCRIPT_LOCATION}/devices/${VENDOR}/${MODEL}/NOTES" ]
+if [ -f "${SCRIPT_LOCATION}/../devices/${VENDOR}/${MODEL}/NOTES" ]
 then
   echo
   echo
   echo "Here are some useful notes for your phone model for future experiments:"
-  cat "${SCRIPT_LOCATION}/devices/${VENDOR}/${MODEL}/NOTES"
+  cat "${SCRIPT_LOCATION}/../devices/${VENDOR}/${MODEL}/NOTES"
 fi

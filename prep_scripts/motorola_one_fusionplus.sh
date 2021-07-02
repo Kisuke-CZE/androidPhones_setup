@@ -1,4 +1,4 @@
 #!/bin/bash
 VENDOR='motorola'
-MODEL='one_fusionplus'
+MODEL='motorola_one_fusion+'
 source "$(dirname "${0}")"/../utils/prep_phone.sh
