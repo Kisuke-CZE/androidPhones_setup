@@ -1,3 +1,6 @@
 Uninstall extras apps if you do not want chinese version of IR Remote app.
-
 The IR Remote app is just preinstalled chinese version of ZaZa Remote app: https://play.google.com/store/apps/details?id=com.tiqiaa.remote
+
+DO NOT REMOVE!!:
+com.google.android.apps.nbu.files - it will break SD card handling
+com.android.launcher3 - app switcher will stop working after removing this
