@@ -1,0 +1,4 @@
+DO NOT UNINSTALL these if you want to keep System Updates (OTA) working:
+com.amazon.tv.forcedotaupdater.v2
+com.amazon.device.software.ota
+com.amazon.device.software.ota.override
