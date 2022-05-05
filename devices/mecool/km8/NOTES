@@ -1,0 +1,3 @@
+If you want to use different launcher than original one (Like ATV Launcher or WolfLauncher), you have to disable com.google.android.tvlauncher after another launcher is installed.
+
+Please run disable-extras command mentionet above to do that.

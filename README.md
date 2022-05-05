@@ -11,6 +11,10 @@ You also need to enable USB Debugging in your phone.
 # Usage
 Just clone this repository and run `prepare_phone.sh` in it's root directory which will try to autodetect your phone model and launch setup for it if it's defined.
 
+If you use this script to setup AndroidTV box, you must find your device IP address in local network and then run `adb connect ATV_BOX_IP_ADDRESS:5555`.
+
+Same thing applies for using with Amazon's FireTV devices like FireTV Cube. But since FireTV devices requires special approach, use `prepare_firetv.sh` instead.
+
 If you want to create script/preset for your phone, jus create corresponding structure in `devices` directory. Structure should be `VENDOR/MODEL`.
 
 You can find correct values of `VENDOR` and `MODEL` which your phone reports by running `prepare_phone.sh test`
