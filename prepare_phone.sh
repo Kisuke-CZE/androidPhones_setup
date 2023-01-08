@@ -7,7 +7,7 @@ then
   exit 1
 fi
 MODEL="$(adb shell getprop ro.product.marketname 2>&1 | tr ' ' '_')"
-if [ -z "${MODEL}"]
+if [ -z "${MODEL}" ]
 then
   MODEL="$(adb shell getprop ro.product.model 2>&1 | tr ' ' '_')"
 fi
