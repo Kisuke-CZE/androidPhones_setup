@@ -64,7 +64,7 @@ then
   cat "${SCRIPT_LOCATION}/devices/${VENDOR}/${MODEL}/disable.extras"
   echo
   echo "If you want to do that, run this command:"
-  echo "  $(readlink -f "${SCRIPT_LOCATION}/utils/disable.sh") $(readlink -f "${SCRIPT_LOCATION}/devices/${VENDOR}/${MODEL}/disable.extras") "
+  echo "  $(readlink -f "${SCRIPT_LOCATION}/utils/disable-user.sh") $(readlink -f "${SCRIPT_LOCATION}/devices/${VENDOR}/${MODEL}/disable.extras") "
 fi
 
 if [ -f "${SCRIPT_LOCATION}/devices/${VENDOR}/${MODEL}/NOTES" ]

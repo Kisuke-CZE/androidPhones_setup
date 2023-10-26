@@ -1,3 +1,5 @@
+If you cannot disable some packages, it's "normal" on newer versions of Fire TV. Look for exploits to get temproot: https://xdaforums.com/t/temp-root-firetv-2nd-gen-cube-raven-ps7646.4596735/
+
 DO NOT UNINSTALL these if you want to keep System Updates (OTA) working:
 com.amazon.tv.forcedotaupdater.v2
 com.amazon.device.software.ota
