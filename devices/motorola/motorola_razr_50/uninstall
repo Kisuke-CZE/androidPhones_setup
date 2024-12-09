@@ -1,5 +1,3 @@
-com.android.hotworldenrollment.xgoogle
-com.android.hotworldenrollment.okgoogle
 com.duckduckgo.mobile.android
 com.facebook.katana
 com.google.android.apps.wellbeing
@@ -21,3 +19,4 @@ com.motorola.spaces
 com.motorola.securityhub
 com.motorola.audiorecorder
 com.motorola.timeweatherwidget
+com.google.android.accessibility.switchaccess
