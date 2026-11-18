@@ -1,3 +1,6 @@
+>[!WARNING]
+>⚠️ This repository has moved to [codeberg.org/Kisuke-CZE/androidPhones_setup](https://codeberg.org/Kisuke-CZE/androidPhones_setup)
+
 # androidPhones_setup
 Simple setup scripts for my phones with Android to get rid of preinstalled bloatware without root access needed
 
